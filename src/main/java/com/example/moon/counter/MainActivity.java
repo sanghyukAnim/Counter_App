@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity   {
                 listview.setAdapter(adapter);
 
                 int costToAdd = intent.getIntExtra("asd", 0);
-                int position = intent.getIntExtra("aa", 1);
+                int pos = intent.getIntExtra("aa", 1);
 
                 adapter = new SpendListAdapter(this, R.layout.listview_item, listViewItemList, new SpendListAdapter.ListBtnClickListener() {
                     @Override
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity   {
                     String newContentName = intent.getStringExtra("asd");
                     adapter.addItem(newContentName, 0);
                 }
-                listViewItemList.get(position).setTotal(costToAdd);
+                (listViewItemList.get(pos)).setTotal(costToAdd);
                 totalSpend = Integer.parseInt(adapter.getItemTotal());
 
                 TextView total = (TextView) findViewById(R.id.textView_total);

@@ -24,13 +24,13 @@ public class Add extends AppCompatActivity {
         Button buttonSave = (Button) findViewById(R.id.buttonSave);
         TextView textView = (TextView) findViewById(R.id.TitleText);
         textView.setText("금액 추가");
-        int position = getIntent().getIntExtra("aa", 0);
+        final int position = getIntent().getIntExtra("aa", 0);
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                int position = getIntent().getIntExtra("aa", 0);
+                // int position = getIntent().getIntExtra("aa", 0);
 
                 EditText editTextNo = (EditText) findViewById(R.id.editText);
                 String strNo = (editTextNo.getText()).toString();
