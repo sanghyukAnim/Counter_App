@@ -18,6 +18,10 @@
         android:inputType="textPersonName"
         android:text="양심껏 입력하시오" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="match_parent"

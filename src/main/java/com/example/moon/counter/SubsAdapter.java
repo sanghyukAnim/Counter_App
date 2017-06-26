@@ -54,7 +54,7 @@ public class SubsAdapter extends BaseAdapter {
         TextView Q = (TextView) convertView.findViewById(R.id.subsCost);
 
         Title.setText(data.get(position).title);
-        Q.setText(data.get(position).getQuotients(totalSpend) + "회");
+        Q.setText(data.get(position).getQuotients(totalSpend) + data.get(position).unitName);
 
         return convertView;
     }

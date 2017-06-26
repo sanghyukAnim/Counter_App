@@ -10,10 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 public class Substitutes {
     public String title;
     private int cost;
+    public String unitName;
 
-    public Substitutes(String title, int cost) {
+    public Substitutes(String title, int cost, String unitName) {
         this.title = title;
         this.cost = cost;
+        this.unitName = unitName;
     }
 
     public String getQuotients(int total) {

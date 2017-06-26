@@ -18,6 +18,10 @@
         android:inputType="textPersonName"
         android:text="새 항목 입력" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
     <Button
         android:id="@+id/buttonContent"
         android:layout_width="match_parent"
