@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity   {
                     @Override
                     public void onListBtnClick(int position) {
                         Intent intent = new Intent(MainActivity.this, Add.class);
+                        intent.putExtra("aa", position);
                         startActivityForResult(intent, 1);
                     }
                 });

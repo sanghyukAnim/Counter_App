@@ -24,7 +24,8 @@ public class Add extends AppCompatActivity {
         Button buttonSave = (Button) findViewById(R.id.buttonSave);
         TextView textView = (TextView) findViewById(R.id.TitleText);
         textView.setText("금액 추가");
-        final int position = getIntent().getIntExtra("aa", 0);
+        Intent intentGet = new Intent(getIntent());
+        final int position = intentGet.getIntExtra("aa", 0);
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
